@@ -1,0 +1,13 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    /* min-height: 100vh; */
+    /* background-color: aqua; */
+    background: url();
+}
