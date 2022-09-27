@@ -7,16 +7,16 @@
     box-sizing: border-box;
     font-family: 'poppins','Roboto',sans-serif;
 }
+.container{
+    width: 100vw;
+}
 body{
     min-height: 100vh;
-    background-color: aqua;
-    background: url("../images/blog-2.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
+
 }
 
 header{
-    position: fixed;
+    position: static;
     top: 0%;left: 0%;right: 0%;
     background: white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -59,4 +59,56 @@ header .navbar ul li a{
 header .navbar ul li a:hover{
     background: #333;
     color: #fff;
+}
+header #social i{
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
+    text-align: center;
+}
+header #social i:hover{
+    transform: rotate(360deg);
+    color: darkred;
+    transition: 0.5s ease;
+    background-color: darkgreen;
+    border-radius: 30%;
+}
+.mainsection{
+    background-color: aqua;
+    background: url("../images/blog-2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.mainsection div{
+    height: 40rem;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    /* margin-bottom: 2rem; */
+}
+footer .rowlist{
+    display: flex;
+    flex-direction: column;
+}
+footer .rowlist .item{
+    margin-left: 0%;
+}
+footer .rowlist .title{
+color: darkcyan;
+font-size: 1.5rem;
+line-height: 2.75rem;
+text-transform: uppercase;
+}
+
+footer .rowlist .item input[type='button']{
+    color: red;
+    padding: 0.1rem;
+    
+}
+footer .rowlist .item input[type='button']:hover{
+    font-weight: bold;
+    cursor: pointer;
 }
