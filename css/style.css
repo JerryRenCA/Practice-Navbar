@@ -1,13 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Satisfy&display=swap');
 *{
     margin: 0%;
     padding: 0%;
     text-decoration: none;
     text-transform: capitalize;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'poppins','Roboto',sans-serif;
 }
 body{
-    /* min-height: 100vh; */
-    /* background-color: aqua; */
-    background: url();
+    min-height: 100vh;
+    background-color: aqua;
+    background: url("../images/blog-2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top: 0%;left: 0%;right: 0%;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: #333;
+    font-family: 'poppins','Roboto',sans-serif;
+}
+header .logo i{
+    color: darkcyan;
+}
+header .logo:hover{
+    color: darkred;
+}
+header .navbar ul{
+    list-style: none;
+    /* display: flex; */
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color:#333;
+    display: block;
+}
+
+header .navbar ul li a:hover{
+    background: #333;
+    color: #fff;
 }
